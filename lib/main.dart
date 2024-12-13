@@ -1,5 +1,4 @@
 import 'package:examen_cvm/routes/appRoutes.dart';
-import 'package:examen_cvm/screens/screens.dart';
 import 'package:examen_cvm/themes/themes.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +12,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      //home: const Listview2Screen(),
       initialRoute: AppRoutes.initialRoute,
       routes: AppRoutes.getAppRoutes(),
       onGenerateRoute: AppRoutes.onGenerateRoute,
