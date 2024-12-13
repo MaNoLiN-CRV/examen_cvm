@@ -1,5 +1,5 @@
-import 'package:examen_cvm/routes/appRoutes.dart';
 import 'package:flutter/material.dart';
+import 'package:examen_cvm/routes/appRoutes.dart';
 import 'package:examen_cvm/widgets/widgets.dart';
 
 
@@ -35,19 +35,19 @@ class LoginScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 30,),
                   TextFormWidgetCustom(
-                    labelText: 'Contraseña',
+                    labelText: 'Contraseña',
                     obscureText: true,
                     onSaved: (value) => password = value!,
-                    validator: (value) => value!.isEmpty ? 'La contraseña es requerida' : null,
+                    validator: (value) => value!.isEmpty ? 'La contrasen a es requerida' : null,
                     isPassword: true,
                   ),   
                   SizedBox(height: 30,),
                   ElevatedButton(
-                    child: Text('Iniciar sesión'),
-                    onPressed: (){
+                    child: Text('Iniciar sesion'),
+                    onPressed: () {
                       if(formKey.currentState!.validate()){
                         formKey.currentState!.save();
-                        Navigator.pushNamed(context, AppRoutes.MenuOptions[1].route);
+                        Navigator.pushNamed(context, AppRoutes.MenuOptions[3].route);
                       }
                     },
                   ),

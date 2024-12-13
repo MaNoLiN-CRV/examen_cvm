@@ -1,4 +1,5 @@
 import 'package:examen_cvm/models/models.dart';
+import 'package:examen_cvm/screens/listViewScreen.dart';
 import 'package:examen_cvm/screens/screens.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,19 @@ class AppRoutes {
       name: 'Login',
       screen: const LoginScreen()
       ),
-      
+    MenuOption(
+      route: 'alert',
+      icon: Icons.warning_rounded,
+      name: 'Alert',
+      screen: const AlertScreen()
+      ),
+    MenuOption(
+      route: 'listview',
+      icon: Icons.list_rounded,
+      name: 'List View',
+      screen: ListViewScreen()
+      ),
+
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
