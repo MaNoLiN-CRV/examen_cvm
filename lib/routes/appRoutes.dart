@@ -10,8 +10,13 @@ class AppRoutes {
       route: 'home', 
       icon: Icons.house_rounded, 
       name: 'Home Screen', 
-      screen: const HomeScreen()),
-   
+      screen: const LoginScreen()),
+    MenuOption(
+      route: 'login',
+      icon: Icons.login_rounded,
+      name: 'Login',
+      screen: const LoginScreen()
+      ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
